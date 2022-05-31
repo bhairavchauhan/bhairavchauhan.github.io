@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-container{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+top: 0px;
+}
+.home {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.cart-btn {
+  position:absolute;
+  right: 0;
+  padding-bottom: 10px;
+  display: inline-block;;
+}
+
+#cart {
+  position: relative;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1em 4em 0 0;
+}
+
+.cart-quantity {
+  color: white;
+  background-color: red;
+  padding: .2em .3em;
+  position: absolute;
+  margin: .8em 7.5em 0 0;
+  right: 0;
+  border: solid 2px red;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.items-container {
+  margin-top:80px;
+  padding-top: 10px;
+  padding-left:5%;
+  display: inline-block;
+}
+
+.card {
+  margin: 0.1em;
+    padding: 16px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+.title {
+  color: grey;
+}
+
+.add-to-cart{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.card:hover  {
+  transform: translateX(0);
+}
+
+
+
+.add-to-cart:hover{
+  background-color: #555;
+}
+
+.product-price {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cart-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 2;
+  transform: translateX(-200%);
+  transition: .5s ease-out;
+
+}
+
+.cart-modal {
+  height: 100vh;
+  width: 50%;
+  background-color: grey;
+  float: right;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#close-btn {
+  font-size: 2.5rem;
+  float: right;
+  margin: .5em 2em 0 0;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-is-empty {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  display: none;
+
+}
+
+.total {
+  text-align: center;
+  margin: 2em 0 2em 0;
+/*   display: none; */
+}
+
+.cart-total {
+  color: white;
+}
+
+.total-price {
+  color: white;
+  font-size: 2rem;
+  display: block;
+}
+
+.purchase-btn {
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: green;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 2em 0 1em 0;
+}
+
+.product-rows {
+  margin-top: 3em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+}
+
+.cart-image {
+  width: 10rem;
+  margin: 1em;
+}
+
+.cart-price {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.product-quantity {
+  width: 4rem;
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.remove-btn {
+  padding: 1em 2em;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 3rem;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.remove-btn:active {
+  transform: translateY(5px);
+}
+
+@media (max-width: 1000px){
+  .cart-modal {
+    width: 100vw;
+  }
+
+  .product-row {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .remove-btn {
+    margin: 0
+  }
+
+  .product-quantity {
+    margin: .5em 0 .5em 0
+  }
+}
+
+
+.bottom-container{
+  background-color: black;
+  margin-top:400px;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+.bottom{
+  padding-left: 10%;
+}
+
+.info{
+display: inline;
+position: absolute;
+padding-top: 35px;
+}
+
+.social-icons{
+  margin-left: 66%;
+  display: inline-flex;
+  position: absolute;
+  padding-top:50px;
+}
+.Policy{
+  font-size:20px;
+  margin-top:65px;
+}
+
+.btnt {
+
+  color: grey;
+  padding: 14px 28px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.shopping{
+  border:none;
+  background-color:black;
+  color: white;
+}
+
+.shopping:hover {
+  background-color: #04AA6D;
+  color: white;}
+.Careers{
+  border:none;
+  background-color:black;
+  color: white;
+}
+
+.Careers:hover {
+  background: #2196F3;
+  color: white;}
+
+.Aboutus {
+  border:none;
+  background-color:black;
+  color: white;
+  }
+.Aboutus:hover {
+    background: #ff9800;
+    color: white;
+  }
+
+.contactus {
+    border:none;
+    background-color:black;
+    color: white;
+  }
+
+.contactus:hover {
+    background: #0DDA2F;
+    color: white;}
+
+.HelpCenter{
+  border:none;
+  background-color:black;
+  color: white;
+}
+
+.HelpCenter:hover {
+  background: #f44336;
+  color: white;
+}
